@@ -1,0 +1,315 @@
+/* Basic styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #ffa4cb;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+
+  .collapse{
+    display: none;
+  }
+
+  .show{
+    display: block;
+    margin-left: -1%;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+ /* Carousel styles */
+.carousel {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-container {
+    display: flex;
+  }
+  
+  .carousel-container div {
+    flex: 0 0 100%;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .carousel-btn-prev {
+    left: 10px;
+  }
+  
+  .carousel-btn-next {
+    right: 10px;
+  }
+  
+  /* Social media icons styles */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    background-color: #555;
+    cursor: alias;
+  }
+  
+  /* Example icons */
+  .social-icons a i {
+    font-size: 20px;
+  }
+
+
+  .collapse navbar-collapse{
+    /* margin-left: 10%; */
+    width: 100%;
+  }
+
+  .nav-link{
+    width: 100%;
+  }
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .change .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .change .line2 {
+      opacity: 0;
+    }
+  
+    .change .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  
+
+
+  .team{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .listcontainer{
+    background-color: #ffa4cb;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .listcontainer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .listcontainer{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+  .commenttext{
+    scroll-snap-align: center;
+    display: inline-block;
+    background-color: #c6c6c6;
+    border-radius: 10%;
+    width: 20em;
+    margin: 1%;
+    padding: 1%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    position: relative;
+}
+
+
+.prev-button{
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: none;
+  transition: all .3s ease-in-out;
+}
+
+.next-button{
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: none;
+  transition: all .3s ease-in-out;
+}
+
+.prev-button {
+  background: none;
+  cursor: pointer;
+  padding-left: 1%;
+}
+
+.next-button {
+  cursor: pointer;
+  padding-right: 1%;
+}
+
+.carouselview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 44px 0;
+  transition: all 0.25s ease-in;
+}
+
+.carouselview .listcontainer {
+  /*max-width: 950px;
+  */width: 90%;
+  padding: 50px 10px;
+  display: flex;
+  gap: 20px;
+  border-radius: 2em;
+  scroll-behavior: smooth;
+  transition: all 0.25s ease-in;
+  -ms-overflow-style: none;
+  /*IEandEdge*/scrollbar-width: none;
+  /*Firefox*/overflow: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+}
+
+p {
+  width: 13em;
+}
+
+.container123 {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+
+
+
+/* Style all font awesome icons */
+.fa {
+  padding: 2px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.social-icons a {
+  color: #ffb9b9;
+}
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.contactus {
+  display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: help;
+}
+
+.Contact{
+  text-align: center;
+  padding: 1%;
+}
